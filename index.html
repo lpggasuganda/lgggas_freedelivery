@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LPG Gas Uganda - Free Delivery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Order LPG Gas</h2>
+        <p class="free-delivery">🔥 Free Delivery Available! 🚚</p>
+        <p>Fill in your details to place an order.</p>
+        
+        <form id="orderForm">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="contact">Phone Number</label>
+            <input type="tel" id="contact" placeholder="Enter your contact" required>
+
+            <label for="address">Delivery Address</label>
+            <input type="text" id="address" placeholder="Enter your address" required>
+
+            <label for="gasType">Select Gas Type</label>
+            <select id="gasType">
+                <option value="6kg">6kg Cylinder</option>
+                <option value="12kg">12kg Cylinder</option>
+                <option value="45kg">45kg Cylinder</option>
+                <option value="custom">Other (Enter Gas Name)</option>
+            </select>
+
+            <label for="customGas">Custom Gas Name/Type</label>
+            <input type="text" id="customGas" placeholder="Enter gas name/type if custom">
+
+            <button type="button" onclick="sendOrder()">Order on WhatsApp</button>
+            <button type="button" class="email-btn" onclick="sendEmail()">Order via Email</button>
+            <button type="button" class="call-btn" onclick="makeCall()">📞 Call Now</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
